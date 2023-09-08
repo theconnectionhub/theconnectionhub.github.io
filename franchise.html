@@ -62,13 +62,13 @@
                                     <div class="switchcolor-wrap">
                                         <h6 class="font-xssss text-grey-500 fw-700 mb-3 d-block">Do you want offer franchise of your brand?</h6>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="1" checked>
                                             <label class="form-check-label" for="flexRadioDefault1">
                                               Yes
                                             </label>
                                           </div>
                                           <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2" >
                                             <label class="form-check-label" for="flexRadioDefault2">
                                               No
                                             </label>
@@ -97,7 +97,7 @@
                                                 </div>        
                                             </div>                                     
                                         </div>
-                                        <div class="row">
+                                        <div class="row hide-no">
                                             <div class="col-6 mb-3">
                                                 <label class="mont-font fw-600 font-xssss">Investment Amount</label>
                                                 <div class="input-group mb-3">
@@ -114,7 +114,7 @@
                                             </div> 
                                         </div>
 
-                                        <div class="row">
+                                        <div class="row hide-no">
                                             <div class="col-6 mb-3">
                                                 <label class="mont-font fw-600 font-xssss">Fees Amount</label>
                                                 <div class="input-group mb-3">
@@ -134,13 +134,13 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-12 mb-3">
+                                        <div class="col-lg-12 mb-3 hide-no">
                                             <div class="form-gorup">
                                                 <label class="mont-font fw-600 font-xssss">Total Outlets</label>
                                                 <input type="text" class="form-control" >
                                             </div>        
                                         </div>   
-                                        <div class="col-lg-12 mb-3">
+                                        <div class="col-lg-12 mb-3 hide-no">
                                             <label class="mont-font fw-600 font-xssss">Franchise Type</label>
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected></option>
@@ -149,14 +149,14 @@
                                                 <option value="3">Three</option>
                                           </select>
                                         </div>
-                                        <div class="col-lg-12 mb-3">
+                                        <div class="col-lg-12 mb-3 hide-no">
                                                 <label class="mont-font fw-600 font-xssss">Area Required</label>
                                             <div class="input-group mb-3">
                                                 <input type="text" class="form-control"  aria-describedby="basic-addon2">
                                                 <span class="input-group-text" id="basic-addon2">Sq. Ft.</span>
                                             </div>    
                                         </div>   
-                                        <div class="col-lg-12 mb-3">
+                                        <div class="col-lg-12 mb-3 hide-no">
                                             <label class="mont-font fw-600 font-xssss">Expansion Country</label>
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected></option>
@@ -166,7 +166,11 @@
                                           </select>
                                         </div>
                                     </div>
-                                     
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-0">
+                                            <a href="dashboard.html" class="bg-current text-center text-white font-xsss fw-600 p-3 w175 rounded-3 d-inline-block">NEXT</a>
+                                        </div>
+                                    </div>
                                     </form>
                             </div>
                         </div>
@@ -375,7 +379,16 @@
 
     <script src="js/plugin.js"></script>
     <script src="js/scripts.js"></script>
-    
+    <script>
+        $(document).on('change', 'input[name=flexRadioDefault]', function () {
+            let val = $(this).val();
+            if(val == 1) {
+                $('.hide-no').removeClass('d-none');
+            } else {
+                $('.hide-no').addClass('d-none');
+            }
+        })
+    </script>
 </body>
 
 
