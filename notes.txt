@@ -1,8 +1,0 @@
-Basic:
-profile pic, email, mobile, about you < 250 char, agenda < 30 char (*)
-
-Business on sale:
-company name*, since*, desc*, amount inr usd*, country*, business type(bostype table)*, banner video link
-
-Franchise:
-franchise name*, Inquiry Form Link, Business Details*, Investment amount inr usd*, Fees amount inr usd*, Royalty*, Total Outlets*, Franchise Type (franchisetype table)*, Area Required Sq. Ft., Expansion (country state city *

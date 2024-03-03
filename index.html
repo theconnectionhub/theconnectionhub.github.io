@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg pl-3 pl-sm-0 pt-0" id="navbar">
     <div class="container">
       <div class="navbar-brand-wrapper d-flex w-100">
-        <img src="images/logo-new.svg" alt="" style="width: 135px;">
+        <a href="index.html"><img src="images/logo-new.svg" alt="" style="width: 135px;"></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="mdi mdi-menu navbar-toggler-icon"></span>
         </button> 
@@ -25,7 +25,7 @@
         <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
           <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
             <div class="navbar-collapse-logo">
-              <img src="images/logo-new.svg" alt="" style="width: 200px;">
+              <a href="index.html"><img src="images/logo-new.svg" alt="" style="width: 200px;"></a>
             </div>
             <button class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
@@ -258,7 +258,7 @@
             <h4 class="pt-1" data-aos="fade-down">Contact us</h4>
           </div>
           <div data-aos="fade-up">
-            <button class="btn btn-rounded btn-outline-danger">Contact us</button>
+            <button class="btn btn-rounded btn-outline-danger contact-us-btn">Contact us</button>
           </div>          
         </div>
       </section>
@@ -266,11 +266,11 @@
         <div class="row text-center text-md-left">
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
             <div class="text-center">
-              <img src="images/logo-new.svg" alt="" style="width: 200px;">
+              <a href="index.html"><img src="images/logo-new.svg" alt="" style="width: 200px;"></a>
             </div>
             <div class="pt-2 text-center">
-              <p class="text-muted m-0">test@test.com</p>
-              <p class="text-muted m-0">123456789</p>
+              <p class="text-muted m-0">businessunify@yahoo.com</p>
+              <p class="text-muted m-0">+91 7385083517</p>
             </div>         
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
@@ -285,10 +285,9 @@
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
             <h5 class="pb-2">Our Guidelines</h5>
-            <a href="#"><p class="m-0 pb-2">Terms</p></a>   
-            <a href="#" ><p class="m-0 pt-1 pb-2">Privacy policy</p></a> 
-            <a href="#"><p class="m-0 pt-1 pb-2">Cookie Policy</p></a> 
-            <a href="#"><p class="m-0 pt-1">Discover</p></a> 
+            <a href="tnc.html"><p class="m-0 pb-2">Terms</p></a>   
+            <a href="policy.html" ><p class="m-0 pt-1 pb-2">Privacy policy</p></a> 
+            <a href="about.html"><p class="m-0 pt-1 pb-2">About Us</p></a> 
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
               <h5 class="pb-2">Our address</h5>
@@ -342,5 +341,10 @@
   <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
   <script src="vendor/aos/js/aos.js"></script>
   <script src="js/landingpage.js"></script>
+  <script>
+    $(document).on('click', '.contact-us-btn', function () {
+        $('#exampleModal').modal('show');
+    })
+  </script>
 </body>
 </html>
